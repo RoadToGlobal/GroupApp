@@ -1,0 +1,12 @@
+[submodule "GroupChatStream"]
+	path = GroupChatStream
+	url = git@github.com:RoadToGlobal/GroupChatStream.git
+[submodule "ClientDistro"]
+	path = ClientDistro
+	url = git@github.com:RoadToGlobal/ClientDistro.git
+[submodule "API"]
+	path = API
+	url = git@bitbucket.org:roadtoglobal/api.git
+[submodule "GroupMaker"]
+	path = GroupMaker
+	url = git@bitbucket.org:roadtoglobal/groupmaker.git
