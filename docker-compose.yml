@@ -1,48 +1,15 @@
 api:
-  build: ./API/
-  dockerfile: ./API/dockerfile
+  build: ./API
+  dockerfile: Dockerfile
   links:
-   - db
-  ports:
-    - "127.0.0.1:80:8000"
+    - db
   volumes:
-   - ./API/:/usr/src/app/
+    - "./API:/src/app"
+  ports:
+    - "80:8000"
   environment:
    NODE_ENV: development
    MONGO_URL: mongodb://db:27017/groupapp
-group-chat-stream:
-  build: ./GroupChatStream/
-  dockerfile: ./GroupChatStream/dockerfile
-  links:
-   - api
-  ports:
-   - "127.0.0.1:8081:8000"
-  volumes:
-   - ./GroupChatStream/:/usr/src/app/
-  environment:
-   NODE_ENV: development
-group-maker:
-  build: ./GroupMaker/
-  dockerfile: ./GroupMaker/dockerfile
-  links:
-   - api
-  ports:
-   - "127.0.0.1:8082:8000"
-  volumes:
-   - ./GroupMaker/:/usr/src/app/
-  environment:
-   NODE_ENV: development
-client-distro:
-  build: ./ClientDistro/
-  dockerfile: ./ClientDistro/dockerfile
-  links:
-   - api
-  ports:
-   - "127.0.0.1:8080:8000"
-  volumes:
-   - ./ClientDistro/:/usr/src/app/
-  environment:
-   NODE_ENV: development
 db:
   image: mongo:latest
   ports:
