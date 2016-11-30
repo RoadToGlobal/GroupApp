@@ -1,3 +1,30 @@
+group-maker:
+  build: ./ClientDistro
+  dockerfile: Dockerfile
+  volumes:
+    - "./GroupMaker:/src/app"
+  ports:
+    - "8082:8000"
+  environment:
+   NODE_ENV: development
+group-chat-stream:
+  build: ./ClientDistro
+  dockerfile: Dockerfile
+  volumes:
+    - "./GroupChatStream:/src/app"
+  ports:
+    - "8081:8000"
+  environment:
+   NODE_ENV: development
+client-distro:
+  build: ./ClientDistro
+  dockerfile: Dockerfile
+  volumes:
+    - "./ClientDistro:/src/app"
+  ports:
+    - "8080:8000"
+  environment:
+   NODE_ENV: development
 api:
   build: ./API
   dockerfile: Dockerfile
