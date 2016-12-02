@@ -7,7 +7,7 @@ group-maker:
     - "./GroupMaker:/src/app"
     - "/src/app/node_modules"
   ports:
-    - "127.0.0.1:8082:8000"
+    - "8082:8000"
   environment:
    NODE_ENV: development
 group-chat-stream:
@@ -17,7 +17,7 @@ group-chat-stream:
     - "./GroupChatStream:/src/app"
     - "/src/app/node_modules"
   ports:
-    - "127.0.0.1:8081:8000"
+    - "8081:8000"
   environment:
    NODE_ENV: development
 client-distro:
@@ -27,7 +27,7 @@ client-distro:
     - "./ClientDistro:/src/app"
     - "/src/app/node_modules"
   ports:
-    - "127.0.0.1:80:8000"
+    - "80:8000"
   environment:
    NODE_ENV: development
 api:
@@ -39,7 +39,7 @@ api:
     - "./API:/src/app"
     - "/src/app/node_modules"
   ports:
-    - "127.0.0.1:8080:8080"
+    - "8080:8080"
   environment:
    PORT: 8080
    NODE_ENV: development
@@ -47,4 +47,4 @@ api:
 db:
   image: mongo:latest
   ports:
-    - "127.0.0.1:27017:27017"
+    - "27017:27017"
