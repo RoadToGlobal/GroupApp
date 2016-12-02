@@ -476,16 +476,28 @@
      ry="3.3221483"
      rx="3.9328632"
      transform="matrix(0.99997637,-0.00687421,-0.64935577,0.76048477,0,0)" />
-  <text
-     xml:space="preserve"
+  <g
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5361)"
-     x="33.954578"
-     y="286.51703"
-     id="text5117"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan5119"
-       x="33.954578"
-       y="286.51703"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;font-family:'Droid Sans Tamil';-inkscape-font-specification:'Droid Sans Tamil'">GRAPP</tspan></text>
+     id="text5117">
+    <path
+       d="m 63.715321,281.31683 0,-9.79004 -8.056641,0 0,-4.05273 12.939453,0 0,15.64941 q -2.856445,2.02637 -6.298828,3.07618 -3.442383,1.02539 -7.348633,1.02539 -8.544922,0 -13.378906,-4.98047 -4.80957,-5.00488 -4.80957,-13.91602 0,-8.93554 4.80957,-13.91601 4.833984,-5.00489 13.378906,-5.00489 3.564453,0 6.762695,0.87891 3.222657,0.87891 5.932618,2.58789 l 0,5.24902 q -2.734375,-2.31933 -5.810547,-3.49121 -3.076172,-1.17187 -6.469727,-1.17187 -6.689453,0 -10.058594,3.73535 -3.344726,3.73535 -3.344726,11.13281 0,7.37305 3.344726,11.1084 3.369141,3.73535 10.058594,3.73535 2.612305,0 4.663086,-0.43945 2.050781,-0.46387 3.686524,-1.41602 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;font-family:'Droid Sans Tamil';-inkscape-font-specification:'Droid Sans Tamil'"
+       id="path5399" />
+    <path
+       d="m 94.916492,269.42719 q 1.586915,0.5371 3.076172,2.29492 1.513672,1.75781 3.027346,4.83398 l 5.00488,9.96094 -5.29785,0 -4.663087,-9.35059 q -1.80664,-3.66211 -3.515625,-4.8584 -1.68457,-1.19628 -4.614257,-1.19628 l -5.371094,0 0,15.40527 -4.931641,0 0,-36.4502 11.132813,0 q 6.25,0 9.326172,2.61231 3.076169,2.6123 3.076169,7.88574 0,3.44238 -1.611326,5.71289 -1.586914,2.27051 -4.638672,3.14942 z m -12.353515,-15.30762 0,12.93945 6.201172,0 q 3.564453,0 5.371093,-1.63574 1.831055,-1.66016 1.831055,-4.8584 0,-3.19824 -1.831055,-4.80957 -1.80664,-1.63574 -5.371093,-1.63574 l -6.201172,0 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;font-family:'Droid Sans Tamil';-inkscape-font-specification:'Droid Sans Tamil'"
+       id="path5401" />
+    <path
+       d="m 122.5288,254.92523 -6.68946,18.13965 13.40332,0 -6.71386,-18.13965 z m -2.78321,-4.8584 5.59082,0 13.89161,36.4502 -5.12696,0 -3.32031,-9.35059 -16.43066,0 -3.32032,9.35059 -5.20019,0 13.91601,-36.4502 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;font-family:'Droid Sans Tamil';-inkscape-font-specification:'Droid Sans Tamil'"
+       id="path5403" />
+    <path
+       d="m 149.45751,254.11957 0,13.69629 6.20117,0 q 3.44238,0 5.32227,-1.78223 1.87988,-1.78223 1.87988,-5.07812 0,-3.27149 -1.87988,-5.05372 -1.87989,-1.78222 -5.32227,-1.78222 l -6.20117,0 z m -4.93164,-4.05274 11.13281,0 q 6.12793,0 9.25293,2.78321 3.14941,2.75879 3.14941,8.10547 0,5.3955 -3.14941,8.15429 -3.125,2.75879 -9.25293,2.75879 l -6.20117,0 0,14.64844 -4.93164,0 0,-36.4502 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;font-family:'Droid Sans Tamil';-inkscape-font-specification:'Droid Sans Tamil'"
+       id="path5405" />
+    <path
+       d="m 179.63329,254.11957 0,13.69629 6.20117,0 q 3.44238,0 5.32227,-1.78223 1.87988,-1.78223 1.87988,-5.07812 0,-3.27149 -1.87988,-5.05372 -1.87989,-1.78222 -5.32227,-1.78222 l -6.20117,0 z m -4.93164,-4.05274 11.13281,0 q 6.12793,0 9.25293,2.78321 3.14941,2.75879 3.14941,8.10547 0,5.3955 -3.14941,8.15429 -3.125,2.75879 -9.25293,2.75879 l -6.20117,0 0,14.64844 -4.93164,0 0,-36.4502 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;font-family:'Droid Sans Tamil';-inkscape-font-specification:'Droid Sans Tamil'"
+       id="path5407" />
+  </g>
 </svg>
