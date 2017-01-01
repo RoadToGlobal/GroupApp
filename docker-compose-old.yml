@@ -1,0 +1,52 @@
+group-maker:
+  build: ./GroupMaker
+  dockerfile: Dockerfile
+  links:
+    - db
+  volumes:
+    - "./GroupMaker:/src/app"
+    - "/src/app/node_modules"
+  ports:
+    - "8082:8000"
+  environment:
+   PORT: 8000
+   NODE_ENV: development
+   MONGO_URL: mongodb://db:27017/groupapp
+group-chat-stream:
+  build: ./GroupChatStream
+  dockerfile: Dockerfile
+  volumes:
+    - "./GroupChatStream:/src/app"
+    - "/src/app/node_modules"
+  ports:
+    - "8081:8000"
+  environment:
+   NODE_ENV: development
+client-distro:
+  build: ./ClientDistro
+  dockerfile: Dockerfile
+  volumes:
+    - "./ClientDistro:/src/app"
+    - "/src/app/node_modules"
+  ports:
+    - "80:8000"
+  environment:
+   NODE_ENV: development
+api:
+  build: ./API
+  dockerfile: Dockerfile
+  links:
+    - db
+  volumes:
+    - "./API:/src/app"
+    - "/src/app/node_modules"
+  ports:
+    - "8080:8080"
+  environment:
+   PORT: 8080
+   NODE_ENV: development
+   MONGO_URL: mongodb://db:27017/groupapp
+db:
+  image: mongo:latest
+  ports:
+    - "27017:27017"

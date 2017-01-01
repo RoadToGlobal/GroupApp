@@ -13,45 +13,53 @@ services:
       - "127.0.0.1:27017:27017"
 
   api:
-    build: API
+    build:
+      context: ./API
+      dockerfile: Dockerfile-development
     volumes:
       - "./API:/src/app"
       - "/src/app/node_modules"
     environment:
       VIRTUAL_HOST: 'api.groupapp.io'
-      NODE_ENV: 'production'
+      NODE_ENV: 'development'
       MONGO_URL: mongodb://db:27017/groupapp
       PORT: 80
 
   chat:
-    build: GroupChatStream
+    build:
+      context: ./GroupChatStream
+      dockerfile: Dockerfile-development
     volumes:
       - "./GroupChatStream:/src/app"
       - "/src/app/node_modules"
     environment:
       VIRTUAL_HOST: 'chat.groupapp.io'
-      NODE_ENV: 'production'
+      NODE_ENV: 'development'
       MONGO_URL: mongodb://db:27017/groupapp
       PORT: 80
 
   groupmaker:
-    build: GroupMaker
+    build:
+      context: ./GroupMaker
+      dockerfile: Dockerfile-development
     volumes:
       - "./GroupMaker:/src/app"
       - "/src/app/node_modules"
     environment:
-      NODE_ENV: 'production'
+      NODE_ENV: 'development'
       MONGO_URL: mongodb://db:27017/groupapp
       PORT: 80
 
   client:
-    build: ClientDistro
+    build:
+      context: ./ClientDistro
+      dockerfile: Dockerfile-development
     volumes:
       - "./ClientDistro:/src/app"
       - "/src/app/node_modules"
     environment:
       VIRTUAL_HOST: 'www.groupapp.io, groupapp.io'
-      NODE_ENV: 'production'
+      NODE_ENV: 'development'
       PORT: 80
 
 version: '2'
