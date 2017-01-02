@@ -9,6 +9,10 @@ elif [[ $1 == build ]]; then
   sudo docker-compose -f docker-compose-development.yml stop
   sudo docker-compose -f docker-compose-development.yml build
   sudo docker-compose -f docker-compose-development.yml up
+elif [[ $1 == down ]]; then
+  sudo docker-compose -f docker-compose-development.yml down
+elif [[ $1 == up ]]; then
+  sudo docker-compose -f docker-compose-development.yml up
 else
   echo 'syntax error'
 fi
