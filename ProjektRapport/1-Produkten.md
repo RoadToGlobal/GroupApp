@@ -77,7 +77,7 @@ Högst upp i hörnet på sidan finns en login knapp. När man trycker på den sy
 
 ![Overview Mockup](ProductMockups/Overview.png)
 
-*Denna vy är till för skaparen av gruppen så att personen får en överblick av grupperingen.*  
+*Denna vy är till för skaparen av aktiviteten så att personen får en överblick av grupperingen.*  
 
 **Share Link**  
  I fältet längst upp finns en länk som skaparen kan dela med sig av. Länken hänvisar till denna grupp och detta skulle till exempel kunna användas av en lärare så att klassen enkelt och snabbt blir uppdelad i flera grupper.  
